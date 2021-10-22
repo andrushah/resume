@@ -1,0 +1,149 @@
+@font-face{
+    font-family: 'Digital';
+    src: url("./fonts/digital.ttf");
+}
+html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Digital;
+    color: #1F869C;
+}
+.bdr{
+    border: 1px solid #5E6A77;
+}
+body{
+    background: #00001E;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type=button]{
+    background: none;
+    outline: none;
+    @extend .bdr;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &.active{
+        border-color:#8fa1b6;
+        background-color: #000624;
+    }
+    &:hover{
+        @extend .bdr;
+        border-color:#8fa1b6;
+    }
+    &:disabled{
+        @extend .bdr;
+        border-color:#434446;
+        color:#434446;
+    }
+
+}
+.container{
+    width: 100%;
+    height: 25%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: #000624;
+    @extend .bdr;
+    .date{
+        font-size: 50px;
+    }
+    .time{
+        font-size: 100px;
+        width: 285px;
+        text-align: left;
+    }
+    
+}
+.spaceAround{
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0;
+}
+.stopWach{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    .stopWachScreen{
+        display: flex;
+        .screen{
+            width: 380px;
+        }
+        .ms{
+            width: 100px;
+            display: block;
+            text-align: left;
+        }
+    }
+    
+}
+.results{
+    width: 200px;
+    height: 90%;
+    overflow: hidden;
+    @extend .bdr;
+    border-color: #1f273f;
+    box-shadow: inset 0 0 5px 1px #1f273f;
+    border-radius: 5px;
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setTimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .minutes{
+        font-size: 80px;
+    }
+    span{
+        font-size: 22px;
+    }
+    .setSontrols{
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        .plus, .minus{
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            line-height: 50px;
+            &:active{
+                background-color: #131b42;
+            }
+        }
+    }
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .timerScreen{
+        font-size: 100px;
+        width: 204px;
+        text-align-last: left;
+    }
+}

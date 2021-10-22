@@ -1,0 +1,218 @@
+@import "_reset";
+@import "_page";
+@import url("../extensions/fontawesome/css/all.min.css");
+
+.scroll {
+    width: 100%;
+}
+
+.scroll,
+.scrollBottom {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F1F1F1;
+    margin-bottom: 50px;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.scrollBottom {
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.slideFromLeft {
+    margin-bottom: 40px;
+    padding-left: 50px;
+    box-sizing: border-box;
+
+    #line {
+        width: 160px;
+        height: 5px;
+        background-color: red;
+    }
+}
+
+.image {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 200px;
+    padding-right: 109px;
+}
+
+#scrollUp {
+    font-size: 56px;
+}
+
+#scrollUp,
+#scrollDown {
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #CB6B61;
+    }
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.white,
+.black {
+    width: 100%;
+    height: 50%;
+    background: #fff;
+}
+
+.black {
+    background: #232323;
+}
+
+.taskList {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    img {
+        height: 550px;
+    }
+    .screen {
+        width: 90%;
+        border: 4px solid rgb(161, 161, 161);
+        border-radius: 30px;
+        padding: 30px;
+        background-color: #000;
+        box-shadow: 0 0 50px #4d4c4c;
+    }
+
+    .taskWrapper {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .leftSide,
+        .rightSide {
+            width: 49%;
+            padding: 20px 0;
+
+            h1 {
+                color: #BA5355;
+                font-size: 24px;
+                font-family: serif;
+                font-weight: normal;
+                margin-bottom: 25px;
+            }
+
+            label {
+                margin-bottom: 20px;
+                display: block;
+
+                input {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .line {
+            width: 6px;
+            height: 100%;
+            background-color: #000;
+
+        }
+
+        .rightSide {
+            padding-left: 0;
+            text-align: center;
+
+            form {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                width: 70%;
+                border-bottom: 1px solid #000;
+                padding: 2px 0px;
+                margin-bottom: 25px;
+                font-size: 18px;
+            }
+
+            button {
+                outline: none;
+                border: none;
+                background-color: #384040;
+                color: #fff;
+                padding: 15px;
+                font-size: 14px;
+                border-radius: 4px;
+                box-shadow: 0 0 4px #000;
+            }
+        }
+    }
+}
+
+.error,
+.error2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    .message {
+        width: 300px;
+        background-color: #fff;
+        position: relative;
+        padding: 15px;
+        h3{
+            color: red;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .close{
+            display: block;
+            width: 16px;
+            height:16px;
+            border: 1px solid red;
+            position: absolute;
+            right: 10px;
+            top: 17px;
+            cursor: pointer;
+            &::before, &:after{
+                content: '';
+                display: block;
+                width: 1px;
+                height: 13px;
+                position: absolute;
+                left:7px;
+                top:1px;
+                background-color: red;
+                transform: rotate(45deg);
+            }
+            &:after{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,514 @@
+@import url("../extensions/fontawesome/css/all.min.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+b {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display SC';
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #464646;
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+a {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: inherit;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000;
+  padding-left: 20px;
+  width: 950px;
+  margin: 0 auto;
+  background-color: #3d3d3d;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+header i {
+  margin-right: 20px;
+  color: inherit;
+}
+
+main {
+  width: 950px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 950px;
+  min-width: 320px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+  border-top: none;
+  background-color: #fff;
+}
+
+main h1 {
+  text-align: center;
+  width: 100%;
+}
+
+main ul {
+  margin-bottom: 30px;
+}
+
+main ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+
+main ul li:last-child {
+  margin-bottom: 0;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+main h2 {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-bottom: 20px;
+}
+
+main h2 i {
+  color: #55772c;
+  font-size: 24px;
+}
+
+main h2 a {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #55772c;
+}
+
+main h3 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main h3:hover {
+  opacity: 0.6;
+}
+
+main .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .technologies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .technologies ul li {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+main .technologies i {
+  color: #5f8532;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+footer {
+  max-width: 950px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  background-color: #3d3d3d;
+  text-align: center;
+}
+
+footer a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.scroll {
+  width: 100%;
+}
+
+.scroll,
+.scrollBottom {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F1F1F1;
+  margin-bottom: 50px;
+}
+
+.scroll h1,
+.scrollBottom h1 {
+  margin: 0;
+}
+
+.scrollBottom {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.slideFromLeft {
+  margin-bottom: 40px;
+  padding-left: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slideFromLeft #line {
+  width: 160px;
+  height: 5px;
+  background-color: red;
+}
+
+.image {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 200px;
+  padding-right: 109px;
+}
+
+#scrollUp {
+  font-size: 56px;
+}
+
+#scrollUp,
+#scrollDown {
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#scrollUp:hover,
+#scrollDown:hover {
+  color: #CB6B61;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.white,
+.black {
+  width: 100%;
+  height: 50%;
+  background: #fff;
+}
+
+.black {
+  background: #232323;
+}
+
+.taskList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.taskList img {
+  height: 550px;
+}
+
+.taskList .screen {
+  width: 90%;
+  border: 4px solid #a1a1a1;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: #000;
+  -webkit-box-shadow: 0 0 50px #4d4c4c;
+          box-shadow: 0 0 50px #4d4c4c;
+}
+
+.taskList .taskWrapper {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.taskList .taskWrapper .leftSide,
+.taskList .taskWrapper .rightSide {
+  width: 49%;
+  padding: 20px 0;
+}
+
+.taskList .taskWrapper .leftSide h1,
+.taskList .taskWrapper .rightSide h1 {
+  color: #BA5355;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.taskList .taskWrapper .leftSide label,
+.taskList .taskWrapper .rightSide label {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.taskList .taskWrapper .leftSide label input,
+.taskList .taskWrapper .rightSide label input {
+  margin-right: 20px;
+}
+
+.taskList .taskWrapper .line {
+  width: 6px;
+  height: 100%;
+  background-color: #000;
+}
+
+.taskList .taskWrapper .rightSide {
+  padding-left: 0;
+  text-align: center;
+}
+
+.taskList .taskWrapper .rightSide form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taskList .taskWrapper .rightSide input {
+  border: none;
+  outline: none;
+  width: 70%;
+  border-bottom: 1px solid #000;
+  padding: 2px 0px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.taskList .taskWrapper .rightSide button {
+  outline: none;
+  border: none;
+  background-color: #384040;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 4px #000;
+          box-shadow: 0 0 4px #000;
+}
+
+.error,
+.error2 {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.error .message,
+.error2 .message {
+  width: 300px;
+  background-color: #fff;
+  position: relative;
+  padding: 15px;
+}
+
+.error .message h3,
+.error2 .message h3 {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error .message p,
+.error2 .message p {
+  margin: 0;
+  padding: 0;
+}
+
+.error .message .close,
+.error2 .message .close {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.error .message .close::before, .error .message .close:after,
+.error2 .message .close::before,
+.error2 .message .close:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 13px;
+  position: absolute;
+  left: 7px;
+  top: 1px;
+  background-color: red;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.error .message .close:after,
+.error2 .message .close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*# sourceMappingURL=style.css.map */

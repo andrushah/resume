@@ -1,0 +1,180 @@
+@import url("../css/reset.css");
+@import url("../fonts/Gilroy/stylesheet.css");
+@import url("../fonts/Playfair_Display/stylesheet.css");
+@import url("../extensions/css/all.min.css"); //fontawesome
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display SC';
+}
+
+a {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: inherit;
+    transition: color 0.3s;
+    &:visited{
+        opacity: 0.7;
+    }
+}
+body{
+    background-color: #dff4ed;
+}
+main {
+    max-width: 950px;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0px 10px 0px #e8e8e8;
+    border-top: none;
+    background-color: #fff;
+    .top-line {
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        background-color: #3d3d3d;
+        margin-bottom: 50px;
+        padding-right: 10px;
+
+        a {
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a.active {
+            opacity: 0.5;
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #464646;
+        margin-bottom: 50px;
+        font-weight: 500;
+        letter-spacing: 10px;
+
+    }
+
+    .container {
+        padding: 0 20px 30px;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        align-content: stretch;
+
+        .ava {
+            width: 40%;
+            min-width: 200px;
+            margin-bottom: 50px;
+            padding-right: 20px;
+        }
+
+        .info {
+            width: 100%;
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+
+                    margin-bottom: 20px;
+                    padding-bottom: 10px;
+                    line-height: 30px;
+                }
+
+                a {
+                    color: inherit;
+                }
+
+                li:nth-child(odd) {
+                    font-size: 16px;
+                    width: 30%;
+                    color: #5f5d5d;
+                    text-transform: uppercase;
+                    font-family: 'Playfair Display SC';
+                    font-weight: normal;
+                }
+
+                li:nth-child(even) {
+                    font-size: 22px;
+                    width: 70%;
+                    border-bottom: 1px solid #dedede;
+                    padding-left: 10px;
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+    //experiance sections
+    .experiance,
+    .projects {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 50px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            text-decoration: underline;
+            font-family: 'Playfair Display SC';
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+
+            font-family: 'Gilroy';
+            font-weight: 400;
+        }
+    }
+
+    .projects {
+        .example {
+            display: flex;
+            width: 100%;
+
+            .list {
+                flex-grow: 1;
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    color: #464646;
+                }
+
+                li {
+                    line-height: 30px;
+
+                    a:hover {
+                        color: #555555;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,212 @@
+@import url("../css/reset.css");
+@import url("../fonts/Gilroy/stylesheet.css");
+@import url("../fonts/Playfair_Display/stylesheet.css");
+@import url("../extensions/css/all.min.css");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display SC';
+}
+
+a {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: inherit;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+a:visited {
+  opacity: 0.7;
+}
+
+body {
+  background-color: #dff4ed;
+}
+
+main {
+  max-width: 950px;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0px 10px 0px #e8e8e8;
+          box-shadow: 0 0px 10px 0px #e8e8e8;
+  border-top: none;
+  background-color: #fff;
+}
+
+main .top-line {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #3d3d3d;
+  margin-bottom: 50px;
+  padding-right: 10px;
+}
+
+main .top-line a {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+main .top-line a.active {
+  opacity: 0.5;
+  border-bottom: 2px solid #fff;
+}
+
+main h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #464646;
+  margin-bottom: 50px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+main .container {
+  padding: 0 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+main .container .ava {
+  width: 40%;
+  min-width: 200px;
+  margin-bottom: 50px;
+  padding-right: 20px;
+}
+
+main .container .info {
+  width: 100%;
+}
+
+main .container .info ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .container .info ul li {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+main .container .info ul a {
+  color: inherit;
+}
+
+main .container .info ul li:nth-child(odd) {
+  font-size: 16px;
+  width: 30%;
+  color: #5f5d5d;
+  text-transform: uppercase;
+  font-family: 'Playfair Display SC';
+  font-weight: normal;
+}
+
+main .container .info ul li:nth-child(even) {
+  font-size: 22px;
+  width: 70%;
+  border-bottom: 1px solid #dedede;
+  padding-left: 10px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+
+main .experiance,
+main .projects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 50px;
+}
+
+main .experiance h2,
+main .projects h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  font-family: 'Playfair Display SC';
+  font-weight: normal;
+}
+
+main .experiance p,
+main .projects p {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+
+main .projects .example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .projects .example .list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .projects .example .list h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #464646;
+}
+
+main .projects .example .list li {
+  line-height: 30px;
+}
+
+main .projects .example .list li a:hover {
+  color: #555555;
+}
+/*# sourceMappingURL=style.css.map */
