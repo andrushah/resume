@@ -242,4 +242,19 @@ main .projects .example .list li a:hover {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+footer {
+  max-width: 950px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  background-color: #3d3d3d;
+  text-align: center;
+}
+
+footer span {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
