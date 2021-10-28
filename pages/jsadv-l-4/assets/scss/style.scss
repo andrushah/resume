@@ -1,0 +1,172 @@
+@import "_reset";
+@import "page";
+@import url("../extensions/fontawesome/css/all.min.css"); //fontawesome
+.links-tree{
+    min-height: 1000px;
+    
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      
+      h1:focus {
+        color: red;
+      }
+      
+      .container {
+        width: 900px;
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        position: relative;
+      }
+      
+      .popup {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        border: 1px dotted #ccc;
+        border-radius: 4px;
+        text-align: center;
+        background-color: #f1f1f1;
+        -webkit-box-shadow: 0 0 10px 0 rgba(180, 180, 180, 0.726);
+                box-shadow: 0 0 10px 0 rgba(180, 180, 180, 0.726);
+        padding: 10px;
+        left: 100px;
+        top: -30px;
+        display: none;
+        opacity: 0;
+        -webkit-animation: showPopup 0.5s forwards;
+                animation: showPopup 0.5s forwards;
+      }
+      
+      .popup p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        color: #000;
+      }
+      
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin: 0;
+            ul{
+                li{
+                    opacity: 0.9;
+                }
+            }
+        }
+      }
+      
+      ul > li {
+        position: relative;
+      }
+      
+      ul > li ul {
+        display: none;
+      }
+      
+      ul > li.minus > ul {
+        display: block;
+      }
+      
+      ul > li.minus > span {
+        background: url("../img/folder-minus.svg") no-repeat center;
+        background-size: cover;
+      }
+      
+      ul > li li {
+        border-left: 1px dotted #ccc;
+        padding-left: 20px;
+      }
+      
+      ul > li li:last-of-type {
+        border: none;
+      }
+      
+      ul > li li::before {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        content: '';
+        width: 15px;
+        height: 8px;
+        border: dotted #ccc;
+        border-width: 0 0 1px 0px;
+        position: absolute;
+        left: -1px;
+        top: 1px;
+      }
+      
+      ul > li li:last-of-type {
+        border: none;
+      }
+      
+      ul > li li:last-of-type::before {
+        left: 0;
+        border-width: 0 0 1px 1px;
+      }
+      
+      ul > li span {
+        margin-right: 0px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        background: url("../img/folder.svg") no-repeat center bottom;
+        background-size: contain;
+      }
+      
+      ul > li.plus > span {
+        background: url("../img/folder-plus.svg") no-repeat center;
+        background-size: cover;
+      }
+      
+      ul > li.minus > span {
+        background: url("../img/folder-minus.svg") no-repeat center;
+        background-size: cover;
+      }
+      
+      ul a {
+        text-decoration: none;
+        color: #2b2b2b;
+        -webkit-transition: color 0.5s;
+        transition: color 0.5s;
+      }
+      
+      ul a:hover {
+        color: #74b677;
+      }
+      
+      li:focus {
+        outline: none;
+        color: green;
+      }
+      
+      li:focus > a {
+        color: inherit;
+      }
+      
+      @-webkit-keyframes showPopup {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 100%;
+        }
+      }
+      
+      @keyframes showPopup {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 100%;
+        }
+      }
+}
