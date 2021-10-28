@@ -188,12 +188,8 @@ main .projects .example {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-}
-
-main .projects .example .list {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .projects .example .list h3 {
