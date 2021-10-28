@@ -74,6 +74,10 @@ h6 {
   font-family: 'Playfair Display SC';
 }
 
+body {
+  background-color: #424242;
+}
+
 h1 {
   font-size: 30px;
   text-transform: uppercase;
@@ -260,7 +264,7 @@ html, body {
 }
 
 body {
-  background: url("../images/2.jpg") no-repeat;
+  background-color: #424242;
   background-size: cover;
   -webkit-transition: background 0.5s linear;
   transition: background 0.5s linear;

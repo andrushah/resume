@@ -25,7 +25,7 @@ a:visited {
 }
 
 body {
-  background-color: #dff4ed;
+  background-color: #424242;
 }
 
 main {
@@ -44,8 +44,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #ccc;
-  -webkit-box-shadow: 0 0px 10px 0px #e8e8e8;
-          box-shadow: 0 0px 10px 0px #e8e8e8;
   border-top: none;
   background-color: #fff;
 }

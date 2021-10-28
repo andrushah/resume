@@ -61,6 +61,10 @@ html, body {
           box-sizing: border-box;
 }
 
+body {
+  background-color: #424242;
+}
+
 b {
   font-weight: bold;
 }
@@ -268,7 +272,7 @@ footer a {
 }
 
 body {
-  background: #00001E;
+  background: #424242;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
