@@ -20,16 +20,35 @@
         </nav>
     </header>
     <main>
-        <h1>Робота над RegExp advanced</h1>
+        <h1>Pazzle game.</h1>
         <h2>Завдання:</h2>
         <ul>
-            <li>1. При кліку на кнопку Add user запускаєте функцію addUser() яка робить наступне:
-                <ul>
-                    <li>- Стягуєте дані з полів і формує об’єкт.</li>
-                    <li>- Цей об’єкт пушить в масив.</li>
-                    <li>- Поля зачищає.</li>
-                    <li>- Запускаєм функцію render() яка генерую всю інфу в таблицю відносно масиву.</li>
-                </ul>
+            <li>
+                — Необхідно розбити картинку на 16 рівних частин і помістити їх в блоки.
+            </li>
+            <li>
+                — При кліку на кнопку Start game або при перетягуванні пазла на правий блок(використовуємо drag & drop)
+                має запуститися зворотній відлік. Сама кнопка має заблокуватися.
+            </li>
+            <li>
+                — Якщо час закінчився і ви не встигли скласти пазл має видати повідомлення в модальному вікні: “It's a
+                pity, but you lost”. Кнопка Check result має заблокуватися
+            </li>
+            <li>
+                — При кліку на кнопку Check result має видати повідомлення в модальному вікні: “You still have time, you
+                sure?” з часом який залишився.
+            </li>
+            <li>
+                — При кліку на кнопку Check перевіряється чи добре складений пазл, якщо так видає повідомлення: “Woohoo,
+                well done, you did it!” в іншому варіанті “It's a pity, but you lost”. Кнопка Check result має
+                заблокуватися.
+            </li>
+            <li>
+                — При кліку на кнопку Close закриває модальне вікно.
+            </li>
+            <li>
+                — При кліку на кнопку New game скидує час і заново рандомно розставляє пазли. Кнопка Start game має
+                розблокуватися, а кнопка Check result має бути заблокована.
             </li>
         </ul>
         <div class="technologies">
@@ -38,14 +57,75 @@
                 <li><i class="fab fa-html5"></i>HTML5</li>
                 <li><i class="fab fa-css3-alt"></i>CSS3</li>
                 <li><i class="fab fa-sass"></i>SASS</li>
-                <li><i class="fab fa-js"></i>EcmaScript</li>
+                <li><img src="./assets/images/jquery.svg" alt=""> JQuery</li>
             </ul>
         </div>
         <h2 class="git"><i class="fab fa-github"></i> Git:<a href="#">проект на github</a></h2>
 
 
         <!-- ---------------------- виконання ---------------------- -->
-        
+
+        <div class="pazzle-game">
+            <h1 class="timer">01:00</h1>
+            <div class="controls">
+                <button id="start">Start game!</button>
+                <button id="checkResult" disabled>Check result!</button>
+                <button id="new">New game!</button>
+            </div>
+            <div class="game-block">
+                <ul class="list" id="left">
+                    <li class="ars-1">1</li>
+                    <li class="ars-2">2</li>
+                    <li class="ars-3">3</li>
+                    <li class="ars-4">4</li>
+                    <li class="ars-5">5</li>
+                    <li class="ars-6">6</li>
+                    <li class="ars-7">7</li>
+                    <li class="ars-8">8</li>
+                    <li class="ars-9">9</li>
+                    <li class="ars-10">10</li>
+                    <li class="ars-11">11</li>
+                    <li class="ars-12">12</li>
+                    <li class="ars-13">13</li>
+                    <li class="ars-14">14</li>
+                    <li class="ars-15">15</li>
+                    <li class="ars-16">16</li>
+                </ul>
+                <ul class="list" id="right">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="modal-container">
+                <div class="d-flex">
+                    <div class="modal">
+                        <div class="message" id="success">Woohoo, well done, you did it!</div>
+                        <div class="message" id="haveTime">You still have time, you sure? <div class="timer">00:00</div>
+                        </div>
+                        <div class="message" id="lost">It's a pity, but you lost</div>
+                        <div class="controls">
+                            <button id="cancel">Cancel</button>
+                            <button id="close">Close</button>
+                            <button id="check">Check</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ---------------------- виконання ---------------------- -->
 
     </main>
@@ -53,6 +133,8 @@
         <a href="../../index.html">Andriy Holomsha CV</a>
     </footer>
 
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

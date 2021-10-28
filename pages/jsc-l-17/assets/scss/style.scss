@@ -1,3 +1,202 @@
 @import "_reset";
 @import "page";
 @import url("../extensions/fontawesome/css/all.min.css"); //fontawesome
+
+.pazzle-game {
+    width: 650px;
+    margin: 0 auto;
+    .timer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 50px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        color: rgb(77, 77, 77);
+    }
+
+    .controls {
+        text-align: center;
+        width: 100%;
+
+        button {
+            border: 1px solid #c7ffd3;
+            outline: none;
+            padding: 10px 20px;
+            margin: 0 20px;
+            color: #fff;
+            background-color: #5f8532;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:disabled {
+                border: none;
+                background-color: #adadad;
+                color: rgb(128, 128, 128);
+            }
+
+            &:active {
+                opacity: 0.95;
+            }
+        }
+
+    }
+
+    .game-block {
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 10px 1px #3d3d3d;
+        border-radius: 4px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 75px;
+            height: 75px;
+            color: transparent;
+            margin: 0;
+        }
+    }
+
+    #halk {
+        display: none;
+    }
+
+    #right li {
+        background: none;
+    }
+
+    .ars-1 {
+        background: url('../images/halk.jpg') no-repeat 0px 0px;
+    }
+
+    .ars-2 {
+        background: url('../images/halk.jpg') no-repeat -75px 0;
+    }
+
+    .ars-3 {
+        background: url('../images/halk.jpg') no-repeat -150px 0;
+    }
+
+    .ars-4 {
+        background: url('../images/halk.jpg') no-repeat -225px 0px;
+    }
+    // next row
+
+    .ars-5 {
+        background: url('../images/halk.jpg') no-repeat -0px -75px;
+    }
+
+    .ars-6 {
+        background: url('../images/halk.jpg') no-repeat -75px -75px;
+    }
+
+    .ars-7 {
+        background: url('../images/halk.jpg') no-repeat -150px -75px;
+    }
+
+    .ars-8 {
+        background: url('../images/halk.jpg') no-repeat -225px -75px;
+    }
+//  next row
+    .ars-9 {
+        background: url('../images/halk.jpg') no-repeat -0px -150px;
+    }
+
+    .ars-10 {
+        background: url('../images/halk.jpg') no-repeat -75px -150px;
+    }
+
+    .ars-11 {
+        background: url('../images/halk.jpg') no-repeat -150px -150px;
+    }
+    .ars-12 {
+        background: url('../images/halk.jpg') no-repeat -225px -150px;
+    }
+// next row
+    .ars-13 {
+        background: url('../images/halk.jpg') no-repeat -0px -225px;
+    }
+
+    .ars-14 {
+        background: url('../images/halk.jpg') no-repeat -75px -225px;
+    }
+
+    .ars-15 {
+        background: url('../images/halk.jpg') no-repeat -150px -225px;
+    }
+// next row
+    .ars-16 {
+        background: url('../images/halk.jpg') no-repeat 100% 100%;
+    }
+
+    .active {
+        background-color: #ccc;
+    }
+
+    .modal-container {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        background-color: #000000c9;
+        display: none;
+
+        .d-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .modal {
+            width: 50%;
+            text-align: center;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .message {
+                display: block;
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 30px 0;
+                margin: 20px 0px;
+                font-size: 30px;
+                display: none;
+
+                .timer {
+                    display: inline;
+                    font-size: inherit;
+                    color: inherit;
+                }
+            }
+
+            button {
+                color: #fff;
+                margin: 0 10px;
+                margin: 10px 0;
+
+                &#close {
+                    display: none;
+                }
+            }
+
+            #check {
+                background-color: rgb(47, 173, 21);
+            }
+        }
+    }
+
+}
