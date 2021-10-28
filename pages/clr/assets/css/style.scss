@@ -1,0 +1,136 @@
+@import url("./reset.css");
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: 100px auto;
+    display: flex;
+}
+form, .tableWrapper{
+    width: 50%;
+    padding: 0 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    label{
+        display: block;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+    input{
+        margin-bottom: 50px;
+        height: 50px;
+        border: 1px solid #D8D9D9;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 40px;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 100;
+        &:focus{
+            border: 1px solid #A2C0DA;
+            box-shadow: 0 0 5px #A2C0DA;
+        }
+        &[type=button]{
+            width: 150px;
+            color: #679473;
+            font-size: 16px;
+            border: 1px solid #679473;
+            box-shadow: none;
+            font-weight: 500;
+            background-color: #fff;
+            transition: background-color 0.3s;
+            &:hover{
+                background-color: #37B052;
+                color: #fff;
+                cursor: pointer;
+            }
+            &:disabled:hover{
+                background-color: #fff;
+                color: #679473;
+                cursor: inherit;
+            }
+            &:focus{
+                box-shadow:  0 0 5px #37B052;
+            }
+        }
+    }
+}
+table{
+    margin-top: 31px;
+    font-family: sans-serif;
+    width: 100%;
+    thead{
+        box-sizing: initial;
+        margin-bottom: 5px;
+        padding-bottom: 5;
+        tr{
+            border-bottom: 2px solid #E2E5E4;
+            border-top: 1px solid #E2E5E4;
+            margin-bottom: 5px;
+
+        }
+        th{
+            height:60px;
+            vertical-align: middle;
+            text-align: left;
+            min-width: 20px;
+        }
+    }
+    td{
+        height: 60px;
+        vertical-align: middle;
+        font-weight: 100;
+    }
+    .edit, .delete{
+        height: 40px;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        &:active{
+            opacity: 0.8;  
+        }
+    }
+    .edit{
+        border: none;
+        background-color: #FFC60E;
+        font-weight: 100;
+    }
+    .delete{
+        outline: none;
+        border: 1px solid #B75862;
+        background-color: #E04553;
+        color: #fff;
+    }
+    tbody{
+        tr{
+            padding-top: 2px;
+        }
+    }
+        
+}
+.err{
+    border: 1px solid red!important;
+    box-shadow: 0 0 4px rgb(238, 111, 111);
+}
+.currentString{
+    background-color: #f0f0f0;
+    animation: blink 1s linear infinite;
+
+}
+@keyframes blink{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: #f0f0f0;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
