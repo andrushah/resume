@@ -1,0 +1,101 @@
+@media only screen and (max-width: 768px){
+    main{
+        .container{
+            flex-wrap: wrap;
+            justify-content: center;
+            .ava{
+                width: 50%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+    main{
+        padding: 0;
+        .experiance{
+            padding: 0 15px;
+            p{
+                line-height: 30px;
+            }
+        }
+        .container{
+            padding: 0 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .ava{
+                width: 60%;
+            }
+            .info{
+                ul{
+                    li{
+                        margin-bottom: 10px;
+                        line-height: 22px;
+                        &:nth-child(odd){
+                            font-size: 16px;
+                            width: 40%;
+                        }
+                        &:nth-child(even){
+                            font-size: 18px;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+        .projects{
+            padding: 0 15px;
+            h2{
+                text-align: center;
+                line-height: 40px;
+            }
+            .example{
+                width: 100%;
+                flex-wrap: wrap;
+                .list{
+                    width: 100%;
+                    margin-bottom: 30px;
+                    h3{
+                        text-align-last: center;
+                    }
+                    ul{
+                        li{
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+    main{
+        padding: 0;
+        .experiance{
+            padding: 0 15px;
+            p{
+                line-height: 30px;
+            }
+        }
+        .container{
+            padding: 0 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .ava{
+                width: 60%;
+            }
+            .info{
+                ul{
+                    li{
+                        &:nth-child(odd){
+                            font-size: 14px;
+                        }
+                        &:nth-child(even){
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

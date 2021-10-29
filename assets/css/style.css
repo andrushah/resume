@@ -1,7 +1,6 @@
 @import url("../css/reset.css");
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/Playfair_Display/stylesheet.css");
-@import url("../extensions/css/all.min.css");
 h1,
 h2,
 h3,
@@ -29,8 +28,9 @@ body {
 }
 
 main {
-  max-width: 950px;
-  min-width: 320px;
+  width: 950px;
+  max-width: 100%;
+  min-width: 310px;
   min-height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
@@ -257,5 +257,105 @@ footer span {
   display: block;
   font-size: 16px;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  main .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .container .ava {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  main {
+    padding: 0;
+  }
+  main .experiance {
+    padding: 0 15px;
+  }
+  main .experiance p {
+    line-height: 30px;
+  }
+  main .container {
+    padding: 0 5px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .container .ava {
+    width: 60%;
+  }
+  main .container .info ul li {
+    margin-bottom: 10px;
+    line-height: 22px;
+  }
+  main .container .info ul li:nth-child(odd) {
+    font-size: 16px;
+    width: 40%;
+  }
+  main .container .info ul li:nth-child(even) {
+    font-size: 18px;
+    width: 60%;
+  }
+  main .projects {
+    padding: 0 15px;
+  }
+  main .projects h2 {
+    text-align: center;
+    line-height: 40px;
+  }
+  main .projects .example {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .projects .example .list {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main .projects .example .list h3 {
+    text-align-last: center;
+  }
+  main .projects .example .list ul li {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main {
+    padding: 0;
+  }
+  main .experiance {
+    padding: 0 15px;
+  }
+  main .experiance p {
+    line-height: 30px;
+  }
+  main .container {
+    padding: 0 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .container .ava {
+    width: 60%;
+  }
+  main .container .info ul li:nth-child(odd) {
+    font-size: 14px;
+  }
+  main .container .info ul li:nth-child(even) {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

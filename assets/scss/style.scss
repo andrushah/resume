@@ -1,7 +1,7 @@
 @import url("../css/reset.css");
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/Playfair_Display/stylesheet.css");
-@import url("../extensions/css/all.min.css"); //fontawesome
+// @import url("../extensions/css/all.min.css"); //fontawesome
 
 
 h1,
@@ -27,8 +27,9 @@ body{
     background-color: #424242;
 }
 main {
-    max-width: 950px;
-    min-width: 320px;
+    width: 950px;
+    max-width: 100%;
+    min-width: 310px;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -225,3 +226,4 @@ footer {
         color: #fff;
     }
 }
+@import "media";
