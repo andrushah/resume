@@ -199,10 +199,42 @@ main .projects .example .list h3 {
 
 main .projects .example .list li {
   line-height: 30px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 0;
 }
 
-main .projects .example .list li a:hover {
-  color: #555555;
+main .projects .example .list li a {
+  display: block;
+  padding-left: 10px;
+}
+
+main .projects .example .list li::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  background-color: #424242;
+}
+
+main .projects .example .list li:hover {
+  color: #fff;
+}
+
+main .projects .example .list li:hover a {
+  text-decoration: none;
+}
+
+main .projects .example .list li:hover::after {
+  right: auto;
+  width: 100%;
 }
 
 .message {

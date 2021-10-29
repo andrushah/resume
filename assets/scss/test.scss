@@ -1,0 +1,30 @@
+ul{
+    li{
+        display: block;
+        margin-bottom: 10px;
+        background-color: #ccc;
+        width: 100px;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background-color: rgb(179, 179, 179);
+            z-index: -1;
+            transition: all 0.5s ease;
+        }
+        &:hover{
+            color: blue;
+            &::after{
+                right: auto;
+                width: 100%;
+            }
+        }
+    }
+}
