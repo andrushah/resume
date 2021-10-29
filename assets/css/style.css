@@ -69,10 +69,11 @@ main .top-line a {
   margin-right: 20px;
   color: #fff;
   text-decoration: none;
+  opacity: 0.5;
 }
 
 main .top-line a.active {
-  opacity: 0.5;
+  opacity: 1;
   border-bottom: 2px solid #fff;
 }
 
