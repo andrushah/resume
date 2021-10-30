@@ -25,7 +25,7 @@ async function getPosters() {
     let posts = [];
     if (searchField.value !== '') {
         search = searchField.value;
-        let url = `http://www.omdbapi.com/?s=${search}&apikey=d971db86`;
+        let url = `https://www.omdbapi.com/?s=${search}&apikey=d971db86`;
         const response = await fetch(url);
         const data = await response.json();
         // перевірка наявності постів на сервері
