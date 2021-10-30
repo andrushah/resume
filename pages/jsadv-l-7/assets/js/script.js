@@ -90,7 +90,7 @@ async function showDetails(event) {
     detailsPostArea.innerHTML = ''; // очистка даних длока детальніше
     let post;
     let postID = event.target.getAttribute('data-post-id');
-    let url = `http://www.omdbapi.com/?i=${postID}&apikey=d971db86`;
+    let url = `https://www.omdbapi.com/?i=${postID}&apikey=d971db86`;
     let response = await fetch(url);
     let data = await response.json();
     post = data;
