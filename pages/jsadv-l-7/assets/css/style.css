@@ -426,6 +426,30 @@ footer a {
   border: none;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+.posts .post-box button:hover::after {
+  height: 100%;
+  top: 0px;
+}
+
+.posts .post-box button::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+  background-color: #3c5d16;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .post-details {
